@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Produtos - Estoque SAEP</title>
+    <link rel="stylesheet" href="../frontend/style.css">
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+    <button onclick="voltar()">Voltar para a Página Principal</button>
+    <hr>
+
+    <h3>Pesquisar Produto</h3>
+    <input type="text" id="busca" placeholder="Digite o nome do produto">
+    <button onclick="pesquisarProduto()">Pesquisar</button>
+    <button onclick="listarProdutos()">Listar Todos</button>
+    <hr>
+
+    <h3>Cadastro de Novo Produto</h3>
+    <label>Nome</label><br>
+    <input type="text" id="nome"><br><br>
+
+    <label>Marca</label><br>
+    <input type="number" id="marca"><br><br>
+
+    <label>Quantidade de Estoque</label><br>
+    <input type="number" id="estoque"><br><br>
+
+    <label>Estoque Mínimo</label><br>
+    <input type="number" id="estoque_minimo"><br><br>
+
+    <button onclick="cadastrarProduto()">Cadastrar</button>
+    <hr>
+
+    <h2>Produtos Cadastrados</h2>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>CH</th>
+                <th>Estoque</th>
+                <th>Mínimo</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaProdutos"></tbody>
+    </table>
+
+    <script src="produtos.js"></script>
+</body>
+</html>

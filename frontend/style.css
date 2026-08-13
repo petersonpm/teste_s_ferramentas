@@ -1,0 +1,189 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+
+body {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+
+h1 {
+    color: #1f4e79;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #1f4e79;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #444;
+    margin-top: 25px;
+}
+
+/* =========================
+   LINHAS
+========================= */
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 25px 0;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 12px;
+    margin-top: 6px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+    outline: none;
+
+    background-color: white;
+}
+
+input:focus {
+    border-color: #1f4e79;
+    box-shadow: 0 0 0 2px rgba(31, 78, 121, 0.15);
+}
+
+/* =========================
+   LABEL
+========================= */
+
+label {
+    font-weight: bold;
+    color: #444;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+button {
+    padding: 10px 16px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #1f4e79;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-right: 8px;
+    margin-top: 8px;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #163a5c;
+    transform: translateY(-1px);
+}
+
+/* Botão Voltar */
+
+button:first-of-type {
+    background-color: #6c757d;
+}
+
+button:first-of-type:hover {
+    background-color: #545b62;
+}
+
+/* =========================
+   TABELA
+========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+
+    border-radius: 8px;
+    overflow: hidden;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+thead {
+    background-color: #1f4e79;
+    color: white;
+}
+
+th {
+    padding: 14px;
+    text-align: left;
+    font-size: 14px;
+}
+
+td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background-color: #f5f8fb;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    button {
+        margin-bottom: 5px;
+    }
+
+    input {
+        max-width: 100%;
+    }
+}
